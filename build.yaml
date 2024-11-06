@@ -19,6 +19,6 @@
 ---
 include:
   - board: nice_nano_v2
-    shield: tbk_left
+    shield: tbk-mini_left
   - board: nice_nano_v2
-    shield: tbk_right
+    shield: tbk-mini_right
