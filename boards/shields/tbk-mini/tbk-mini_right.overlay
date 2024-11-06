@@ -7,7 +7,7 @@
 #include "tbk-mini.dtsi"
 
 &default_transform {
-	column-offset = <5>;
+	column-offset = <6>;
 };
 
 &kscan0 {
