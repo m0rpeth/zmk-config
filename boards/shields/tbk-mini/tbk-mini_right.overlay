@@ -6,10 +6,6 @@
  
 #include "tbk-mini.dtsi"
 
-&default_transform {
-	column-offset = <6>;
-};
-
 &kscan0 {
 	compatible = "zmk,kscan-gpio-matrix";
 	wakeup-source;
