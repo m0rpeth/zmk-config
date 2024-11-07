@@ -10,7 +10,7 @@
 // layer-tap
 &lt {
   tapping-term-ms = <190>;
-  flavor = "balanced"
+  flavor = "balanced";
 };
 
 // one-shot layers
