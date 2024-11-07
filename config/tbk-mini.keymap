@@ -29,6 +29,17 @@
     //    };
     //};
 
+    behaviors {
+        shifted_bspc_delete: shifted_bspc_delete {
+            compatible = "zmk,behavior-mod-morph";
+            label = "SHIFTED_BSPC_DELETE";
+            bindings = <&kp BACKSPACE>, <&kp DEL>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
