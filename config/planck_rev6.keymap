@@ -5,48 +5,103 @@
  */
 
 #include <behaviors.dtsi>
+#include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 
-/* Uncomment this block if using an encoder */
-//&encoder {
-//    status = "okay";
-//};
+// layer-tap
+
+&lt {
+    tapping-term-ms = <190>;
+    flavor = "balanced";
+};
+
+// one-shot layers
+
+&sl { release-after-ms = <5000>; };
 
 / {
+
+    behaviors {
+        mod_bspc: mod_bspc {
+            compatible = "zmk,behavior-mod-morph";
+            label = "MOD_BSPC";
+            bindings = <&kp BACKSPACE>, <&kp DEL>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
-        default_layer {
+        qwerty {
             // -----------------------------------------------------------------------------------------
             // |  TAB  |  Q   |  W   |  E   |  R   |  T   |   Y   |  U    |  I   |  O   |   P   | BSPC  |
             // |  ESC  |  A   |  S   |  D   |  F   |  G   |   H   |  J    |  K   |  L   |   ;   |  '    |
             // | SHIFT |  Z   |  X   |  C   |  V   |  B   |   N   |  M    |  ,   |  .   |   /   |  RET  |
             // |       | LCTRL | LALT | LGUI | LOWR |     SPACE    |  RAIS | LEFT | DOWN | UP  |  RIGHT |
-            bindings = <
-                &kp TAB  &kp Q    &kp W &kp E &kp R &kp T  &kp Y   &kp U  &kp I    &kp O   &kp P    &kp BSPC
-                &kp ESC  &kp A    &kp S &kp D &kp F &kp G  &kp H   &kp J  &kp K    &kp L   &kp SEMI &kp SQT
-                &kp LSHFT &kp Z    &kp X &kp C &kp V &kp B  &kp N   &kp M  &kp COMMA &kp DOT &kp SLASH &kp RET
-                &trans   &kp LCTRL &kp LALT &kp LGUI &mo 1 &trans &kp SPACE &mo 2 &kp LEFT &kp DOWN &kp UP &kp RIGHT
-            >;
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
-        };
 
-        lower {
             bindings = <
-                &kp LS(GRAVE) &kp LS(N1) &kp LS(N2) &kp LS(N3) &kp LS(N4) &kp LS(N5) &kp LS(N6) &kp LS(N7) &kp LS(N8) &kp LS(N9) &kp LS(N0) &kp DEL
-                &kp DEL &kp F1 &kp F2 &kp F3 &kp F4 &kp F5 &kp F6 &kp UNDER &kp PLUS &kp LBRC &kp RBRC &kp PIPE
-                &trans &kp F7 &kp F8 &kp F9 &kp F10 &kp F11 &kp F12 &kp LS(HASH) &kp LS(BSLH) &kp HOME &kp END &trans
-                &trans &trans &trans &trans &trans &trans &trans &trans &kp C_NEXT &kp C_VOL_DN &kp C_VOL_UP &kp C_PP
+&kp ESC     &kp Q           &kp W              &kp E            &kp R            &kp T        &kp Y      &kp U                 &kp I           &kp O               &kp P              &mod_bspc
+&kp TAB     &kp A           &kp S              &kp D            &kp F            &kp G        &kp H      &kp J                 &kp K           &kp L               &kp SEMI           &kp SQT
+&kp LSHFT   &kp Z           &kp X              &kp C            &kp V            &kp B        &kp N      &kp M                 &kp COMMA       &kp DOT             &kp FSLH           &sl LRHFT
+&kp LCTRL   &none           &kp LALT           &kp LGUI         &mo 3            &kp SPACE    &kp SPACE  &mo 2                 &kp ENTER       &kp RALT            &sl 5              &kp RCTRL
             >;
         };
 
-        raise {
+        colemak {
             bindings = <
-                &kp GRAVE &kp N1 &kp N2 &kp N3 &kp N4 &kp N5 &kp N6 &kp N7 &kp N8 &kp N9 &kp N0 &kp BSPC
-                &kp DEL &kp F1 &kp F2 &kp F3 &kp F4 &kp F5 &kp F6 &kp MINUS &kp EQUAL &kp LBKT &kp RBKT &kp BSLH
-                &trans &kp F7 &kp F8 &kp F9 &kp F10 &kp F11 &kp F12 &kp HASH &kp BSLH &kp PG_UP &kp PG_DN &trans
-                &sys_reset &bootloader &trans &trans &trans &trans &trans &trans &kp C_NEXT &kp C_VOL_DN &kp C_VOL_UP &kp C_PP
+&trans  &kp Q  &kp W  &kp F   &kp P   &kp B     &kp J   &kp L   &kp U      &kp Y    &kp SEMI  &trans
+&trans  &kp A  &kp R  &kp S   &kp T   &kp G     &kp M   &kp N   &kp E      &kp I    &kp O     &kp SQT
+&trans  &kp Z  &kp X  &kp C   &kp D   &kp V     &kp K   &kp H   &kp COMMA  &kp DOT  &kp FSLH  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
+        };
+
+        raise_layer {
+            bindings = <
+&trans  &kp LS(PRCNT)  &kp LS(PRCNT)  &kp LBKT      &kp RBKT      &kp GRAVE       &kp FSLH    &kp LS(CARET)  &kp LS(DLLR)  &kp LS(STAR)  &kp LS(POUND)  &trans
+&trans  &kp LS(QMARK)  &kp LS(EXCL)   &kp LS(LPAR)  &kp LS(RPAR)  &kp LS(PIPE)    &kp LS(AT)  &kp MINUS      &kp EQUAL     &kp LS(PLUS)  &kp LS(COLON)  &trans
+&trans  &kp LS(AMPS)   &kp LS(UNDER)  &kp LS(LBRC)  &kp LS(RBRC)  &none           &kp BSLH    &kp LS(TILDE)  &kp LS(LT)    &kp LS(GT)    &kp LS(DQT)    &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+            >;
+        };
+
+        lower_layer {
+            bindings = <
+&trans  &kp COMMA  &kp N7  &kp N8  &kp N9  &kp LS(DLLR)     &kp HOME  &kp PG_DN  &kp PG_UP  &kp END    &none  &trans
+&trans  &kp N0     &kp N4  &kp N5  &kp N6  &kp LS(PRCNT)    &kp LEFT  &kp DOWN   &kp UP     &kp RIGHT  &none  &trans
+&trans  &kp DOT    &kp N1  &kp N2  &kp N3  &none            &none     &none      &none      &none      &none  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+            >;
+        };
+
+        adjust_layer {
+            bindings = <
+&tog 1  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &sys_reset
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+            >;
+        };
+
+        fn_layer {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &kp F6    &kp F7  &kp F8  &kp F9  &kp F10  &kp F11  &kp F12
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+            >;
+        };
+    };
+
+    conditional_layers {
+        compatible = "zmk,conditional-layers";
+
+        activate_adjust_layer {
+            if-layers = <2 3>;
+            then-layer = <4>;
         };
     };
 };
