@@ -44,8 +44,8 @@
             bindings = <
 &kp ESC    &kp Q  &kp W     &kp E     &kp R  &kp T      &kp Y      &kp U  &kp I      &kp O     &kp P     &mod_bspc
 &kp TAB    &kp A  &kp S     &kp D     &kp F  &kp G      &kp H      &kp J  &kp K      &kp L     &kp SEMI  &kp SQT
-&kp LSHFT  &kp Z  &kp X     &kp C     &kp V  &kp B      &kp N      &kp M  &kp COMMA  &kp DOT   &kp FSLH  &kp RSHFT
-&kp LCTRL  &none  &kp LALT  &kp LGUI  &mo 3  &kp SPACE  &kp SPACE  &mo 2  &kp ENTER  &kp RALT  &sl 5     &kp RCTRL
+&kp LSHFT  &kp Z  &kp X     &kp C     &kp V  &kp B      &kp N      &kp M  &kp COMMA  &kp DOT   &kp FSLH  &kp ENTER
+&kp LCTRL  &mo 5  &kp LALT  &kp LGUI  &mo 3  &kp SPACE  &kp SPACE  &mo 2  &kp RGUI   &kp RALT  &mo 6     &kp RCTRL
             >;
         };
 
@@ -82,6 +82,15 @@
 &none   &none  &none  &none  &none  &none  &none  &rgb_ug RGB_TOG  &rgb_ug RGB_EFF  &rgb_ug RGB_HUI  &rgb_ug RGB_SAI  &rgb_ug RGB_BRI
 &none   &none  &none  &none  &none  &none  &none  &none            &rgb_ug RGB_EFR  &rgb_ug RGB_HUD  &rgb_ug RGB_SAD  &rgb_ug RGB_BRD
 &none   &none  &none  &none  &none  &none  &none  &none            &none            &none            &none            &none
+            >;
+        };
+
+        Misc {
+            bindings = <
+&trans  &kp LC(LA(KP_NUMBER_7))  &kp LA(LC(KP_NUMBER_8))  &kp LC(LA(KP_NUMBER_9))  &trans  &trans  &trans              &trans              &trans            &trans               &trans  &trans
+&trans  &kp LA(LC(KP_NUMBER_4))  &kp LA(LC(KP_NUMBER_5))  &kp LA(LC(KP_NUMBER_6))  &trans  &trans  &kp LC(LEFT_ARROW)  &kp LC(DOWN_ARROW)  &kp LC(UP_ARROW)  &kp LC(RIGHT_ARROW)  &trans  &trans
+&trans  &kp LC(LA(KP_NUMBER_1))  &kp LA(LC(KP_NUMBER_2))  &kp LA(LC(KP_NUMBER_3))  &trans  &trans  &trans              &trans              &trans            &trans               &trans  &trans
+&trans  &trans                   &trans                   &trans                   &trans  &trans  &trans              &trans              &trans            &trans               &trans  &trans
             >;
         };
 
