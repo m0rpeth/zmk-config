@@ -87,7 +87,7 @@
 
         Misc {
             bindings = <
-&trans  &kp LC(LA(KP_NUMBER_7))  &kp LA(LC(KP_NUMBER_8))  &kp LC(LA(KP_NUMBER_9))  &trans  &trans  &trans              &trans              &trans            &trans               &trans  &trans
+&trans  &kp LC(LA(KP_NUMBER_7))  &kp LA(LC(KP_NUMBER_8))  &kp LC(LA(KP_NUMBER_9))  &trans  &trans  &kp LC(NUMBER_1)    &kp LC(NUMBER_2)    &kp LC(NUMBER_3)  &kp LC(NUMBER_4)     &trans  &trans
 &trans  &kp LA(LC(KP_NUMBER_4))  &kp LA(LC(KP_NUMBER_5))  &kp LA(LC(KP_NUMBER_6))  &trans  &trans  &kp LC(LEFT_ARROW)  &kp LC(DOWN_ARROW)  &kp LC(UP_ARROW)  &kp LC(RIGHT_ARROW)  &trans  &trans
 &trans  &kp LC(LA(KP_NUMBER_1))  &kp LA(LC(KP_NUMBER_2))  &kp LA(LC(KP_NUMBER_3))  &trans  &trans  &trans              &trans              &trans            &trans               &trans  &trans
 &trans  &trans                   &trans                   &trans                   &trans  &trans  &trans              &trans              &trans            &trans               &trans  &trans
