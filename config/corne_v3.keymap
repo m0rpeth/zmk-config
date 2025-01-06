@@ -72,6 +72,7 @@
         compatible = "zmk,keymap";
 
         qwerty {
+            display-name = "qwerty";
             // -----------------------------------------------------------------------------------------
             // |  TAB |  Q  |  W  |  E  |  R  |   T  |   |  Y  |  U   |  I  |  O  |  P  | BSPC |
             // | CTRL |  A  |  S  |  D  |  F  |   G  |   |  H  |  J   |  K  |  L  |  ;  |  '   |
@@ -87,6 +88,7 @@
         };
 
         colemak {
+            display-name = "colemak";
             bindings = <
 &trans  &kp Q  &kp W  &kp F   &kp P   &kp G     &kp J   &kp L   &kp U      &kp Y    &kp SEMI  &trans
 &trans  &kp A  &kp R  &kp S   &kp T   &kp D     &kp H   &kp N   &kp E      &kp I    &kp O     &trans
@@ -96,6 +98,7 @@
         };
 
         raise_layer {
+            display-name = "rse";
             bindings = <
 &trans  &kp LS(PRCNT)  &kp LS(PRCNT)  &kp LBKT      &kp RBKT      &kp GRAVE       &kp FSLH    &kp LS(CARET)  &kp LS(DLLR)  &kp LS(STAR)  &kp LS(POUND)  &trans
 &trans  &kp LS(QMARK)  &kp LS(EXCL)   &kp LS(LPAR)  &kp LS(RPAR)  &kp LS(PIPE)    &kp LS(AT)  &kp MINUS      &kp EQUAL     &kp LS(PLUS)  &kp LS(COLON)  &none
@@ -105,6 +108,7 @@
         };
 
         lower_layer {
+            display-name = "lwr";
             bindings = <
 &trans  &kp COMMA  &kp N7  &kp N8  &kp N9  &kp LS(DLLR)     &kp HOME  &kp PG_DN  &kp PG_UP  &kp END    &none  &trans
 &trans  &kp N0     &kp N4  &kp N5  &kp N6  &kp LS(PRCNT)    &kp LEFT  &kp DOWN   &kp UP     &kp RIGHT  &none  &none
@@ -114,6 +118,7 @@
         };
 
         adjust_layer {
+            display-name = "adj";
             bindings = <
 &tog 1  &none  &none  &none   &none   &none     &bt BT_CLR_ALL  &none         &none         &none         &none         &none
 &none   &none  &none  &none   &none   &none     &bt BT_SEL 0    &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &none
@@ -123,6 +128,7 @@
         };
 
         fn_layer {
+            display-name = "fn";
             bindings = <
 &none   &none   &none   &none   &none   &none     &none   &none   &none   &none    &none    &none
 &kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &kp F6    &kp F7  &kp F8  &kp F9  &kp F10  &kp F11  &kp F12
@@ -132,6 +138,7 @@
         };
 
         wm_layer {
+            display-name = "wm";
             bindings = <
 &none   &none  &kp LC(LA(KP_NUMBER_7))  &kp LA(LC(KP_NUMBER_8))  &kp LC(LA(KP_NUMBER_9))   &none  &kp LC(NUMBER_1)    &kp LC(NUMBER_2)    &kp LC(NUMBER_3)  &kp LC(NUMBER_4)     &none  &none
 &none   &none  &kp LA(LC(KP_NUMBER_4))  &kp LA(LC(KP_NUMBER_5))  &kp LA(LC(KP_NUMBER_6))   &none  &kp LC(LEFT_ARROW)  &kp LC(DOWN_ARROW)  &kp LC(UP_ARROW)  &kp LC(RIGHT_ARROW)  &none  &none
