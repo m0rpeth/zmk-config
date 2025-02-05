@@ -147,7 +147,7 @@
         compatible = "zmk,conditional-layers";
 
         activate_adjust_layer {
-            if-layers = <3 3>;
+            if-layers = <3 2>;
             then-layer = <4>;
         };
     };
