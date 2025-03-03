@@ -75,11 +75,13 @@
         lsft {
             bindings = <&kp LSHFT>;
             key-positions = <16 15>;
+            layers = <0>;
         };
 
         rsft {
             bindings = <&kp RSHFT>;
             key-positions = <19 20>;
+            layers = <0>;
         };
     };
 
