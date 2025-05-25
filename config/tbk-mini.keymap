@@ -3,15 +3,7 @@
 #include <dt-bindings/zmk/keys.h>
 
 // layer-tap
-
-&lt {
-    tapping-term-ms = <190>;
-    flavor = "balanced";
-};
-
 // one-shot layers
-
-&sl { release-after-ms = <5000>; };
 
 / {
     //combos {
