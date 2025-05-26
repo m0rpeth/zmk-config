@@ -61,7 +61,74 @@
         };
     };
 
-    combos { compatible = "zmk,combos"; };
+    combos {
+        compatible = "zmk,combos";
+
+        Left_Square_Bracket {
+            bindings = <&kp LBKT>;
+            key-positions = <2 1>;
+        };
+
+        Right_Square_Bracket {
+            bindings = <&kp RBKT>;
+            key-positions = <2 3>;
+            layers = <0>;
+        };
+
+        Left_Parenthesis {
+            bindings = <&kp LPAR>;
+            key-positions = <14 13>;
+            layers = <0>;
+        };
+
+        Right_Parenthesis {
+            bindings = <&kp RPAR>;
+            key-positions = <15 14>;
+            layers = <0>;
+        };
+
+        Left_Brace {
+            bindings = <&kp LBRC>;
+            key-positions = <26 25>;
+            layers = <0>;
+        };
+
+        Right_Brace {
+            bindings = <&kp RBRC>;
+            key-positions = <27 26>;
+            layers = <0>;
+        };
+
+        Percent {
+            bindings = <&kp PERCENT>;
+            key-positions = <1 0>;
+            layers = <0>;
+        };
+
+        QuestionMark {
+            bindings = <&kp QMARK>;
+            key-positions = <12 14>;
+            layers = <0>;
+        };
+
+        ExclamationMark {
+            bindings = <&kp EXCL>;
+            key-positions = <12 13>;
+            layers = <0>;
+        };
+
+        Underscore {
+            bindings = <&kp UNDER>;
+            key-positions = <24 25>;
+            layers = <0>;
+        };
+
+        Amp {
+            bindings = <&kp AMPS>;
+            key-positions = <24 26>;
+            layers = <0>;
+        };
+    };
 
     keymap {
         compatible = "zmk,keymap";
