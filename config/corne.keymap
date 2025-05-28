@@ -107,25 +107,115 @@
 
         QuestionMark {
             bindings = <&kp QMARK>;
-            key-positions = <12 14>;
+            key-positions = <12 13>;
             layers = <0>;
         };
 
         ExclamationMark {
             bindings = <&kp EXCL>;
-            key-positions = <12 13>;
+            key-positions = <12 14>;
             layers = <0>;
         };
 
         Underscore {
             bindings = <&kp UNDER>;
-            key-positions = <24 25>;
+            key-positions = <24 26>;
             layers = <0>;
         };
 
         Amp {
             bindings = <&kp AMPS>;
-            key-positions = <24 26>;
+            key-positions = <24 25>;
+            layers = <0>;
+        };
+
+        Grave {
+            bindings = <&kp GRAVE>;
+            key-positions = <4 5>;
+            layers = <0>;
+        };
+
+        Pipe {
+            bindings = <&kp PIPE>;
+            key-positions = <16 17>;
+            layers = <0>;
+        };
+
+        Fwrd-Slash {
+            bindings = <&kp SLASH>;
+            key-positions = <6 7>;
+            layers = <0>;
+        };
+
+        At {
+            bindings = <&kp AT>;
+            key-positions = <18 19>;
+            layers = <0>;
+        };
+
+        Backslash {
+            bindings = <&kp BACKSLASH>;
+            key-positions = <30 31>;
+            layers = <0>;
+        };
+
+        Caret {
+            bindings = <&kp CARET>;
+            key-positions = <7 8>;
+            layers = <0>;
+        };
+
+        Minus {
+            bindings = <&kp MINUS>;
+            key-positions = <19 20>;
+            layers = <0>;
+        };
+
+        Tilde {
+            bindings = <&kp TILDE>;
+            key-positions = <31 32>;
+            layers = <0>;
+        };
+
+        Dollar {
+            bindings = <&kp DOLLAR>;
+            key-positions = <9 8>;
+            layers = <0>;
+        };
+
+        Equal {
+            bindings = <&kp EQUAL>;
+            key-positions = <20 21>;
+            layers = <0>;
+        };
+
+        lt {
+            bindings = <&kp LESS_THAN>;
+            key-positions = <32 33>;
+            layers = <0>;
+        };
+
+        gt {
+            bindings = <&kp GREATER_THAN>;
+            key-positions = <33 34>;
+            layers = <0>;
+        };
+
+        plus {
+            bindings = <&kp PLUS>;
+            key-positions = <21 22>;
+            layers = <0>;
+        };
+
+        Asterisk {
+            bindings = <&kp ASTERISK>;
+            key-positions = <9 10>;
+            layers = <0>;
+        };
+
+        Hash {
+            bindings = <&kp HASH>;
+            key-positions = <10 11>;
             layers = <0>;
         };
     };
