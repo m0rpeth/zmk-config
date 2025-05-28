@@ -141,12 +141,6 @@
             layers = <0>;
         };
 
-        Fwrd-Slash {
-            bindings = <&kp SLASH>;
-            key-positions = <6 7>;
-            layers = <0>;
-        };
-
         At {
             bindings = <&kp AT>;
             key-positions = <18 19>;
@@ -155,13 +149,13 @@
 
         Backslash {
             bindings = <&kp BACKSLASH>;
-            key-positions = <30 31>;
+            key-positions = <8 9>;
             layers = <0>;
         };
 
         Caret {
             bindings = <&kp CARET>;
-            key-positions = <7 8>;
+            key-positions = <7 6>;
             layers = <0>;
         };
 
@@ -179,7 +173,7 @@
 
         Dollar {
             bindings = <&kp DOLLAR>;
-            key-positions = <9 8>;
+            key-positions = <30 31>;
             layers = <0>;
         };
 
