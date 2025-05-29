@@ -268,10 +268,10 @@
         Gaming_Hunt {
             display-name = "Hunt";
             bindings = <
-&tog 2   &kp ESC    &kp Q  &kp W   &kp E   &kp R     &trans  &trans  &trans  &trans  &trans  &trans
-&kp TAB  &kp LSHFT  &kp A  &kp S   &kp D   &kp F     &trans  &trans  &trans  &trans  &trans  &trans
-&none    &kp LCTRL  &kp Z  &kp X   &kp C   &kp V     &trans  &trans  &trans  &trans  &trans  &trans
-                           &trans  &trans  &trans    &trans  &trans  &trans
+&kp ESC  &none      &kp Q  &kp W   &kp E   &kp R        &trans  &trans  &trans  &trans  &trans  &trans
+&kp TAB  &kp LSHFT  &kp A  &kp S   &kp D   &kp F        &trans  &trans  &trans  &trans  &trans  &trans
+&none    &kp LCTRL  &kp Z  &kp X   &kp C   &kp V        &trans  &trans  &trans  &trans  &trans  &trans
+                           &trans  &trans  &kp SPACE    &trans  &trans  &trans
             >;
         };
 
@@ -298,7 +298,7 @@
         adjust_layer {
             display-name = "adj";
             bindings = <
-&tog 1  &tog 2  &none  &none   &none   &none     &bt BT_CLR_ALL  &none         &none         &none         &none         &none
+&tog 2  &tog 1  &none  &none   &none   &none     &bt BT_CLR_ALL  &none         &none         &none         &none         &none
 &none   &none   &none  &none   &none   &none     &bt BT_SEL 0    &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &none
 &none   &none   &none  &none   &none   &none     &none           &none         &none         &none         &none         &none
                        &trans  &trans  &trans    &trans          &trans        &trans
