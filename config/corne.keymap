@@ -265,13 +265,13 @@
             >;
         };
 
-        Gaming_Hunt {
+        Gaming {
             display-name = "Hunt";
             bindings = <
-&kp ESC  &none      &kp Q  &kp W   &kp E   &kp R        &trans  &trans  &trans  &trans  &trans  &trans
-&kp TAB  &kp LSHFT  &kp A  &kp S   &kp D   &kp F        &trans  &trans  &trans  &trans  &trans  &trans
-&none    &kp LCTRL  &kp Z  &kp X   &kp C   &kp V        &trans  &trans  &trans  &trans  &trans  &trans
-                           &trans  &trans  &kp SPACE    &trans  &trans  &trans
+&kp ESC    &kp Q  &kp W  &kp E    &kp R   &kp T        &trans     &trans  &trans  &trans  &trans  &trans
+&kp LSHFT  &kp A  &kp S  &kp D    &kp F   &kp G        &trans     &trans  &trans  &trans  &trans  &trans
+&kp LCTRL  &kp Z  &kp X  &kp C    &kp V   &kp B        &trans     &trans  &trans  &trans  &trans  &trans
+                         &kp TAB  &trans  &kp SPACE    &mod_bspc  &trans  &trans
             >;
         };
 
