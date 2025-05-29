@@ -212,6 +212,12 @@
             key-positions = <31 32>;
             layers = <0>;
         };
+
+        dbl-quote {
+            bindings = <&kp DOUBLE_QUOTES>;
+            key-positions = <23 22>;
+            layers = <0>;
+        };
     };
 
     macros {
