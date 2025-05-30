@@ -269,8 +269,8 @@
             display-name = "Hunt";
             bindings = <
 &kp ESC    &kp Q  &kp W  &kp E    &kp R   &kp T        &trans     &trans  &trans  &trans  &trans  &trans
-&kp LSHFT  &kp A  &kp S  &kp D    &kp F   &kp G        &trans     &trans  &trans  &trans  &trans  &trans
-&kp LCTRL  &kp Z  &kp X  &kp C    &kp V   &kp B        &trans     &trans  &trans  &trans  &trans  &trans
+&kp LCTRL  &kp A  &kp S  &kp D    &kp F   &kp G        &trans     &trans  &trans  &trans  &trans  &trans
+&kp LSHFT  &kp Z  &kp X  &kp C    &kp V   &kp B        &trans     &trans  &trans  &trans  &trans  &trans
                          &kp TAB  &trans  &kp SPACE    &mod_bspc  &trans  &trans
             >;
         };
