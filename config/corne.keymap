@@ -3,19 +3,11 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 
-// layer-tap
-// one-shot layers
+&nkp {
+    no-resume;
+};
 
 / {
-    //combos {
-    //    compatible = "zmk,combos";
-    //    combo_esc {
-    //        timeout-ms = <50>;
-    //        key-positions = <0 1>;
-    //        bindings = <&kp ESC>;
-    //    };
-    //};
-
     behaviors {
         mod_bspc: mod_bspc {
             compatible = "zmk,behavior-mod-morph";
@@ -241,10 +233,6 @@
             bindings = <&kp R &kp E &kp M>;
             label = "REM";
         };
-    };
-
-    &nkp {
-        no-resume;
     };
 
     keymap {
