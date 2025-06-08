@@ -243,6 +243,10 @@
         };
     };
 
+    &nkp {
+        no-resume;
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
