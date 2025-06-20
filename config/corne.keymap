@@ -239,10 +239,10 @@
         qwerty {
             display-name = "qwerty";
             bindings = <
-&kp ESCAPE  &kp Q              &kp W              &kp E           &kp R                &kp T        &kp Y      &kp U           &kp I           &kp O               &kp P             &mod_bspc
-&kp TAB     &hrm_l LEFT_GUI A  &hrm_l LEFT_ALT S  &hrm_l LCTRL D  &hrm_l LEFT_SHIFT F  &kp G        &kp H      &hrm_r RSHFT J  &hrm_r RCTRL K  &hrm_r RIGHT_ALT L  &hrm_r RGUI SEMI  &kp SQT
-&mo 6       &kp Z              &kp X              &kp C           &kp V                &kp B        &kp N      &kp M           &kp COMMA       &kp DOT             &kp FSLH          &mo 7
-                                                  &kp ESCAPE      &mo 4                &mod_bspc    &kp SPACE  &mo 3           &kp ENTER
+&kp ESCAPE  &kp Q              &kp W              &kp E           &kp R  &kp T        &kp Y      &kp U  &kp I           &kp O               &kp P             &mod_bspc
+&kp TAB     &hrm_l LEFT_GUI A  &hrm_l LEFT_ALT S  &hrm_l LCTRL D  &kp F  &kp G        &kp H      &kp J  &hrm_r RCTRL K  &hrm_r RIGHT_ALT L  &hrm_r RGUI SEMI  &kp SQT
+&kp LSHFT   &kp Z              &kp X              &kp C           &kp V  &kp B        &kp N      &kp M  &kp COMMA       &kp DOT             &kp FSLH          &kp RSHFT
+                                                  &kp ESCAPE      &mo 4  &mod_bspc    &kp SPACE  &mo 3  &kp ENTER
             >;
         };
 
