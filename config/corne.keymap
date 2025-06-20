@@ -56,6 +56,7 @@
         Left_Square_Bracket {
             bindings = <&kp LBKT>;
             key-positions = <2 3>;
+            layers = <0>;
         };
 
         Right_Square_Bracket {
@@ -257,10 +258,10 @@
         Gaming {
             display-name = "game";
             bindings = <
-&kp ESC    &kp Q   &kp W  &kp E      &kp R   &kp T        &trans     &trans  &trans  &trans  &trans  &trans
-&kp TAB    &kp A  &kp S  &kp D     &kp F   &kp G        &trans     &trans  &trans  &trans  &trans  &trans
-&kp LSHFT  &kp Z   &kp X  &kp C      &kp V   &kp B        &trans     &trans  &trans  &trans  &trans  &trans
-                          &kp LCTRL  &trans  &kp SPACE    &mod_bspc  &trans  &trans
+&kp ESC    &kp Q  &kp W  &kp E      &kp R   &kp T        &trans     &trans  &trans  &trans  &trans  &trans
+&kp TAB    &kp A  &kp S  &kp D      &kp F   &kp G        &trans     &trans  &trans  &trans  &trans  &trans
+&kp LSHFT  &kp Z  &kp X  &kp C      &kp V   &kp B        &trans     &trans  &trans  &trans  &trans  &trans
+                         &kp LCTRL  &trans  &kp SPACE    &mod_bspc  &trans  &trans
             >;
         };
 
