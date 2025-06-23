@@ -200,19 +200,7 @@
 
         Hash {
             bindings = <&kp HASH>;
-            key-positions = <31 32>;
-            layers = <0>;
-        };
-
-        dbl-quote {
-            bindings = <&kp DOUBLE_QUOTES>;
-            key-positions = <23 22>;
-            layers = <0>;
-        };
-
-        colon {
-            bindings = <&kp COLON>;
-            key-positions = <35 34>;
+            key-positions = <8 7>;
             layers = <0>;
         };
     };
