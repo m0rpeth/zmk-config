@@ -52,7 +52,7 @@
 
     combos {
         compatible = "zmk,combos";
-        require-prior-idle-ms = <100>;
+        require-prior-idle-ms = <125>;
 
         Left_Square_Bracket {
             bindings = <&kp LBKT>;
