@@ -48,6 +48,16 @@
             #binding-cells = <0>;
             bindings = <&mo 5>, <&mo 6>;
         };
+
+        mt_tap_preferred: mt_tap_preferred {
+            compatible = "zmk,behavior-hold-tap";
+            label = "MT_TAP_PREFERRED";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <150>;
+            flavor = "tap-preferred";
+        };
     };
 
     combos {
@@ -227,10 +237,10 @@
         qwerty {
             display-name = "qwerty";
             bindings = <
-&kp ESCAPE  &kp Q          &kp W              &kp E           &kp R  &kp T                   &kp Y            &kp U  &kp I           &kp O               &kp P                  &mod_bspc
-&kp TAB     &hrm_l LGUI A  &hrm_l LEFT_ALT S  &hrm_l LCTRL D  &kp F  &kp G                   &kp H            &kp J  &hrm_r RCTRL K  &hrm_r RIGHT_ALT L  &hrm_r RGUI SEMICOLON  &kp SQT
-&none       &kp Z          &kp X              &kp C           &kp V  &kp B                   &kp N            &kp M  &kp COMMA       &kp DOT             &kp FSLH               &none
-                                              &kp ESCAPE      &mo 4  &mt LEFT_SHIFT SPACE    &mt RSHFT SPACE  &mo 3  &kp ENTER
+&kp ESCAPE  &kp Q          &kp W              &kp E           &kp R  &kp T                                 &kp Y                          &kp U  &kp I           &kp O               &kp P                  &mod_bspc
+&kp TAB     &hrm_l LGUI A  &hrm_l LEFT_ALT S  &hrm_l LCTRL D  &kp F  &kp G                                 &kp H                          &kp J  &hrm_r RCTRL K  &hrm_r RIGHT_ALT L  &hrm_r RGUI SEMICOLON  &kp SQT
+&none       &kp Z          &kp X              &kp C           &kp V  &kp B                                 &kp N                          &kp M  &kp COMMA       &kp DOT             &kp FSLH               &none
+                                              &kp ESCAPE      &mo 4  &mt_tap_preferred LEFT_SHIFT SPACE    &mt_tap_preferred RSHFT SPACE  &mo 3  &kp ENTER
             >;
         };
 
