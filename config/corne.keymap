@@ -232,7 +232,7 @@
             bindings = <
 &kp ESCAPE  &kp Q          &kp W              &kp E           &kp R  &kp T        &kp Y      &kp U  &kp I           &kp O               &kp P                  &mt_delete LG(BACKSPACE) BACKSPACE
 &kp TAB     &hrm_l LGUI A  &hrm_l LEFT_ALT S  &hrm_l LCTRL D  &kp F  &kp G        &kp H      &kp J  &hrm_r RCTRL K  &hrm_r RIGHT_ALT L  &hrm_r RGUI SEMICOLON  &kp SQT
-&none       &kp Z          &kp X              &kp C           &kp V  &kp B        &kp N      &kp M  &kp COMMA       &kp DOT             &kp FSLH               &none
+&mo 7       &kp Z          &kp X              &kp C           &kp V  &kp B        &kp N      &kp M  &kp COMMA       &kp DOT             &kp FSLH               &mo 6
                                               &kp ESCAPE      &mo 4  &kp SPACE    &sk RSHFT  &mo 3  &kp ENTER
             >;
         };
@@ -290,20 +290,20 @@
         fn_layer {
             display-name = "fn";
             bindings = <
-&none   &none   &none   &none   &none   &none     &none   &none   &none   &none    &none    &none
-&kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &kp F6    &kp F7  &kp F8  &kp F9  &kp F10  &kp F11  &kp F12
-&none   &none   &none   &none   &none   &none     &none   &none   &none   &none    &none    &none
-                        &none   &none   &none     &none   &none   &none
+&none  &none  &kp F7  &kp F8  &kp F9  &kp F12    &none  &none  &none  &none  &none  &none
+&none  &none  &kp F4  &kp F5  &kp F6  &kp F11    &none  &none  &none  &none  &none  &none
+&none  &none  &kp F1  &kp F2  &kp F3  &kp F10    &none  &none  &none  &none  &none  &none
+                      &none   &none   &none      &none  &none  &none
             >;
         };
 
         wm_layer {
             display-name = "wm";
             bindings = <
-&none  &none  &kp LC(LA(KP_NUMBER_7))  &kp LA(LC(KP_NUMBER_8))  &kp LC(LA(KP_NUMBER_9))  &none     &kp LC(NUMBER_1)    &kp LC(NUMBER_2)    &kp LC(NUMBER_3)  &kp LC(NUMBER_4)     &none  &none
-&none  &none  &kp LA(LC(KP_NUMBER_4))  &kp LA(LC(KP_NUMBER_5))  &kp LA(LC(KP_NUMBER_6))  &none     &kp LC(LEFT_ARROW)  &kp LC(DOWN_ARROW)  &kp LC(UP_ARROW)  &kp LC(RIGHT_ARROW)  &none  &none
-&none  &none  &kp LC(LA(KP_NUMBER_1))  &kp LA(LC(KP_NUMBER_2))  &kp LA(LC(KP_NUMBER_3))  &none     &none               &none               &none             &none                &none  &none
-                                       &trans                   &trans                   &trans    &trans              &trans              &trans
+&none  &none  &kp LC(LA(KP_NUMBER_7))  &kp LA(LC(KP_NUMBER_8))  &kp LC(LA(KP_NUMBER_9))  &none    &kp LC(NUMBER_1)    &kp LC(NUMBER_2)    &kp LC(NUMBER_3)  &kp LC(NUMBER_4)     &none  &none
+&none  &none  &kp LA(LC(KP_NUMBER_4))  &kp LA(LC(KP_NUMBER_5))  &kp LA(LC(KP_NUMBER_6))  &none    &kp LC(LEFT_ARROW)  &kp LC(DOWN_ARROW)  &kp LC(UP_ARROW)  &kp LC(RIGHT_ARROW)  &none  &none
+&none  &none  &kp LC(LA(KP_NUMBER_1))  &kp LA(LC(KP_NUMBER_2))  &kp LA(LC(KP_NUMBER_3))  &none    &none               &none               &none             &none                &none  &none
+                                       &none                    &none                    &none    &none               &none               &none
             >;
         };
     };
