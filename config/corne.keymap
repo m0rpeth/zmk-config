@@ -63,6 +63,22 @@
             flavor = "tap-preferred";
             tapping-term-ms = <150>;
         };
+
+        td_lower_wm_layer: td_lower_wm_layer {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD_LOWER_WM_LAYER";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&mo 4>, <&mo 7>;
+        };
+
+        td_raise_fn_layer: td_raise_fn_layer {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD_RAISE_FN_LAYER";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&mo 3>, <&mo 6>;
+        };
     };
 
     combos {
@@ -155,7 +171,7 @@
 
         Backslash {
             bindings = <&kp BACKSLASH>;
-            key-positions = <34 31>;
+            key-positions = <34 33>;
             layers = <0>;
         };
 
@@ -173,7 +189,7 @@
 
         Tilde {
             bindings = <&kp TILDE>;
-            key-positions = <7 10>;
+            key-positions = <31 32>;
             layers = <0>;
         };
 
@@ -186,18 +202,6 @@
         Equal {
             bindings = <&kp EQUAL>;
             key-positions = <20 21>;
-            layers = <0>;
-        };
-
-        lt {
-            bindings = <&kp LESS_THAN>;
-            key-positions = <32 33>;
-            layers = <0>;
-        };
-
-        gt {
-            bindings = <&kp GREATER_THAN>;
-            key-positions = <33 34>;
             layers = <0>;
         };
 
@@ -234,6 +238,34 @@
             bindings = <&kp R &kp E &kp M>;
             label = "REM";
         };
+
+        a_uml: a_uml {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LA(U) &kp A>;
+            label = "A_UML";
+        };
+
+        o_uml: o_uml {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LA(U) &kp O>;
+            label = "O_UML";
+        };
+
+        u_uml: u_uml {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LA(U) &kp U>;
+            label = "U_UML";
+        };
+
+        sz: sz {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp RA(S)>;
+            label = "SZ";
+        };
     };
 
     keymap {
@@ -242,10 +274,10 @@
         qwerty {
             display-name = "qwerty";
             bindings = <
-&kp ESCAPE  &kp Q          &kp W              &kp E           &kp R  &kp T                         &kp Y                        &kp U  &kp I           &kp O               &kp P                  &mt_delete LA(BACKSPACE) BACKSPACE
-&kp TAB     &hrm_l LGUI A  &hrm_l LEFT_ALT S  &hrm_l LCTRL D  &kp F  &kp G                         &kp H                        &kp J  &hrm_r RCTRL K  &hrm_r RIGHT_ALT L  &hrm_r RGUI SEMICOLON  &kp SQT
-&mo 7       &kp Z          &kp X              &kp C           &kp V  &kp B                         &kp N                        &kp M  &kp COMMA       &kp DOT             &kp FSLH               &mo 6
-                                              &kp ESCAPE      &mo 4  &mt_space LEFT_SHIFT SPACE    &mt_space RIGHT_SHIFT SPACE  &mo 3  &kp ENTER
+&kp ESCAPE  &kp Q          &kp W              &kp E           &kp R               &kp T                         &kp Y                        &kp U               &kp I           &kp O               &kp P                  &kp BACKSPACE
+&kp TAB     &hrm_l LGUI A  &hrm_l LEFT_ALT S  &hrm_l LCTRL D  &kp F               &kp G                         &kp H                        &kp J               &hrm_r RCTRL K  &hrm_r RIGHT_ALT L  &hrm_r RGUI SEMICOLON  &kp SQT
+&none       &kp Z          &kp X              &kp C           &kp V               &kp B                         &kp N                        &kp M               &kp COMMA       &kp DOT             &kp FSLH               &none
+                                              &kp ESCAPE      &td_lower_wm_layer  &mt_space LEFT_SHIFT SPACE    &mt_space RIGHT_SHIFT SPACE  &td_raise_fn_layer  &kp ENTER
             >;
         };
 
@@ -272,18 +304,18 @@
         raise_layer {
             display-name = "rse";
             bindings = <
-&trans  &kp LS(PRCNT)  &kp LS(PRCNT)  &kp LBKT      &kp RBKT      &kp GRAVE       &kp FSLH    &kp LS(CARET)  &kp LS(DLLR)  &kp LS(STAR)  &kp LS(POUND)  &trans
-&trans  &kp LS(QMARK)  &kp LS(EXCL)   &kp LS(LPAR)  &kp LS(RPAR)  &kp LS(PIPE)    &kp LS(AT)  &kp MINUS      &kp EQUAL     &kp LS(PLUS)  &kp LS(COLON)  &none
-&trans  &kp LS(AMPS)   &kp LS(UNDER)  &kp LS(LBRC)  &kp LS(RBRC)  &none           &kp BSLH    &kp LS(TILDE)  &kp LS(LT)    &kp LS(GT)    &kp LS(DQT)    &trans
-                                      &trans        &trans        &trans          &trans      &trans         &trans
+&trans  &trans  &trans  &kp LA(LS(NUMBER_2))  &trans  &trans    &trans  &u_uml  &trans  &o_uml  &trans  &kp DEL
+&trans  &a_uml  &sz     &trans                &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans                &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans                &trans  &trans    &trans  &trans  &trans
             >;
         };
 
         lower_layer {
             display-name = "lwr";
             bindings = <
-&trans  &kp COMMA  &kp N7  &kp N8  &kp N9  &rem             &kp HOME  &kp PG_DN  &kp PG_UP  &kp END    &none  &mt_delete LG(DELETE) DELETE
-&trans  &kp N0     &kp N4  &kp N5  &kp N6  &kp LS(PRCNT)    &kp LEFT  &kp DOWN   &kp UP     &kp RIGHT  &none  &none
+&trans  &kp COMMA  &kp N7  &kp N8  &kp N9  &rem             &kp HOME  &kp PG_DN  &kp PG_UP  &kp END    &none  &trans
+&trans  &kp N0     &kp N4  &kp N5  &kp N6  &kp LS(PRCNT)    &kp LEFT  &kp DOWN   &kp UP     &kp RIGHT  &none  &trans
 &trans  &kp DOT    &kp N1  &kp N2  &kp N3  &px              &none     &none      &none      &none      &none  &trans
                            &trans  &trans  &trans           &trans    &trans     &trans
             >;
