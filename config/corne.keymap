@@ -294,20 +294,20 @@
         raise_layer {
             display-name = "rse";
             bindings = <
-&trans  &kp COMMA  &kp N7  &kp N8  &kp N9  &rem             &trans    &trans     &trans     &trans     &trans  &kp DEL
-&trans  &kp N0     &kp N4  &kp N5  &kp N6  &kp LS(PRCNT)    &trans    &trans     &trans     &trans     &trans  &trans
-&trans  &kp DOT    &kp N1  &kp N2  &kp N3  &px              &trans    &trans     &trans     &trans     &trans  &trans
-                           &trans  &trans  &trans           &trans    &trans     &trans
+&trans  &kp COMMA  &kp N7  &kp N8  &kp N9  &rem             &trans  &trans  &trans  &trans  &trans  &kp DEL
+&trans  &kp N0     &kp N4  &kp N5  &kp N6  &kp LS(PRCNT)    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp DOT    &kp N1  &kp N2  &kp N3  &px              &trans  &trans  &trans  &trans  &trans  &trans
+                           &trans  &trans  &trans           &trans  &trans  &trans
             >;
         };
 
         lower_layer {
             display-name = "lwr";
             bindings = <
-&trans  &trans &trans &trans &trans &trans            &kp HOME  &kp PG_DN  &kp PG_UP  &kp END    &none  &trans
-&trans  &trans &trans &trans &trans &trans            &kp LEFT  &kp DOWN   &kp UP     &kp RIGHT  &none  &trans
-&trans  &trans &trans &trans &trans &trans            &none     &none      &none      &none      &none  &trans
-                    &trans  &trans  &trans            &trans    &trans     &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &kp HOME  &kp PG_DN  &kp PG_UP  &kp END    &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &kp LEFT  &kp DOWN   &kp UP     &kp RIGHT  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans    &trans     &trans     &trans     &trans  &trans
+                        &trans  &trans  &trans    &trans    &trans     &trans
             >;
         };
 
