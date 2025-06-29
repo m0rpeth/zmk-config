@@ -230,6 +230,12 @@
             key-positions = <32 33>;
             layers = <0>;
         };
+
+        colon {
+            bindings = <&kp COLON>;
+            key-positions = <23 22>;
+            layers = <0>;
+        };
     };
 
     macros {
