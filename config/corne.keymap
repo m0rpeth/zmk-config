@@ -179,7 +179,7 @@
 
         Tilde {
             bindings = <&kp TILDE>;
-            key-positions = <31 32>;
+            key-positions = <31 32 33>;
             layers = <0>;
         };
 
@@ -216,6 +216,18 @@
         Arrow {
             bindings = <&Arrow>;
             key-positions = <20 21 22>;
+            layers = <0>;
+        };
+
+        lt {
+            bindings = <&kp LESS_THAN>;
+            key-positions = <31 32>;
+            layers = <0>;
+        };
+
+        gt {
+            bindings = <&kp GREATER_THAN>;
+            key-positions = <32 33>;
             layers = <0>;
         };
     };
