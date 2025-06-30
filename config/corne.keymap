@@ -131,7 +131,7 @@
 
         Underscore {
             bindings = <&kp UNDER>;
-            key-positions = <28 29>;
+            key-positions = <25 26>;
             layers = <0>;
         };
 
@@ -179,7 +179,7 @@
 
         Tilde {
             bindings = <&kp TILDE>;
-            key-positions = <31 32 33>;
+            key-positions = <28 29>;
             layers = <0>;
         };
 
