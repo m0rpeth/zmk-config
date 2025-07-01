@@ -125,13 +125,13 @@
 
         ExclamationMark {
             bindings = <&kp EXCL>;
-            key-positions = <13 14 15>;
+            key-positions = <1 2>;
             layers = <0>;
         };
 
         Underscore {
             bindings = <&kp UNDER>;
-            key-positions = <25 26>;
+            key-positions = <28 27 26>;
             layers = <0>;
         };
 
@@ -179,7 +179,7 @@
 
         Tilde {
             bindings = <&kp TILDE>;
-            key-positions = <28 29>;
+            key-positions = <31 32 33>;
             layers = <0>;
         };
 
