@@ -125,19 +125,19 @@
 
         ExclamationMark {
             bindings = <&kp EXCL>;
-            key-positions = <1 2>;
+            key-positions = <25 26>;
             layers = <0>;
         };
 
         Underscore {
             bindings = <&kp UNDER>;
-            key-positions = <28 27 26>;
+            key-positions = <28 29>;
             layers = <0>;
         };
 
         Amp {
             bindings = <&kp AMPS>;
-            key-positions = <25 26>;
+            key-positions = <1 2>;
             layers = <0>;
         };
 
