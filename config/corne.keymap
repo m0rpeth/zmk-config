@@ -167,7 +167,7 @@
 
         Caret {
             bindings = <&kp CARET>;
-            key-positions = <7 6>;
+            key-positions = <30 31>;
             layers = <0>;
         };
 
@@ -179,13 +179,13 @@
 
         Tilde {
             bindings = <&kp TILDE>;
-            key-positions = <31 32 33>;
+            key-positions = <31 32>;
             layers = <0>;
         };
 
         Dollar {
             bindings = <&kp DOLLAR>;
-            key-positions = <30 31>;
+            key-positions = <6 7>;
             layers = <0>;
         };
 
@@ -216,24 +216,6 @@
         Arrow {
             bindings = <&Arrow>;
             key-positions = <20 21 19>;
-            layers = <0>;
-        };
-
-        lt {
-            bindings = <&kp LESS_THAN>;
-            key-positions = <31 32>;
-            layers = <0>;
-        };
-
-        gt {
-            bindings = <&kp GREATER_THAN>;
-            key-positions = <32 33>;
-            layers = <0>;
-        };
-
-        colon {
-            bindings = <&kp COLON>;
-            key-positions = <23 22>;
             layers = <0>;
         };
     };
