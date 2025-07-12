@@ -277,10 +277,10 @@
         qwerty {
             display-name = "qwerty";
             bindings = <
-&kp ESCAPE  &kp Q          &kp W              &kp E           &kp R               &kp T                             &kp Y                        &kp U               &kp I           &kp O               &kp P                  &kp BACKSPACE
-&kp TAB     &hrm_l LGUI A  &hrm_l LEFT_ALT S  &hrm_l LCTRL D  &kp F               &kp G                             &kp H                        &kp J               &hrm_r RCTRL K  &hrm_r RIGHT_ALT L  &hrm_r RGUI SEMICOLON  &kp SQT
-&none       &kp Z          &kp X              &kp C           &kp V               &kp B                             &kp N                        &kp M               &kp COMMA       &kp DOT             &kp FSLH               &none
-                                              &kp ESCAPE      &td_lower_wm_layer  &kp LEFT_SHIFT                    &mt_space RIGHT_SHIFT SPACE  &td_raise_fn_layer  &kp ENTER
+&kp ESCAPE  &kp Q          &kp W              &kp E           &kp R               &kp T             &kp Y                        &kp U               &kp I           &kp O               &kp P                  &mod_bspc
+&kp TAB     &hrm_l LGUI A  &hrm_l LEFT_ALT S  &hrm_l LCTRL D  &kp F               &kp G             &kp H                        &kp J               &hrm_r RCTRL K  &hrm_r RIGHT_ALT L  &hrm_r RGUI SEMICOLON  &kp SQT
+&none       &kp Z          &kp X              &kp C           &kp V               &kp B             &kp N                        &kp M               &kp COMMA       &kp DOT             &kp FSLH               &none
+                                              &kp ESCAPE      &td_lower_wm_layer  &kp LEFT_SHIFT    &mt_space RIGHT_SHIFT SPACE  &td_raise_fn_layer  &kp ENTER
             >;
         };
 
@@ -307,7 +307,7 @@
         raise_layer {
             display-name = "rse";
             bindings = <
-&trans  &trans  &trans  &kp LA(LS(NUMBER_2))  &trans  &trans    &trans  &u_uml  &trans  &o_uml  &trans  &kp DEL
+&trans  &trans  &trans  &kp LA(LS(NUMBER_2))  &trans  &trans    &trans  &u_uml  &trans  &o_uml  &trans  &trans
 &trans  &a_uml  &sz     &trans                &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans                &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
                         &trans                &trans  &trans    &trans  &trans  &trans
