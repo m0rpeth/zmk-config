@@ -18,6 +18,12 @@
 #
 ---
 include:
+  ### Piantor ###
+  - board: rpi_pico
+    shield: piantor_left
+  - board: rpi_pico
+    shield: piantor_right
+
   ### TBK-Mini ###
   - board: nice_nano_v2
     shield: tbk-mini_left

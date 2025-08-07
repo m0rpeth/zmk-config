@@ -13,6 +13,9 @@ manifest:
     # nice_oled - dongle_display!view - oled Adapter
     - name: mctechnology17
       url-base: https://github.com/mctechnology17
+    # piantor shield for zmk
+    - name: dani0854
+      url-base: https://github.com/dani0854
   projects:
     - name: zmk
       remote: zmkfirmware
@@ -40,6 +43,10 @@ manifest:
     # oled Adapter
     - name: zmk-oled-adapter
       remote: mctechnology17
+      revision: main
+    # piantor shield for zmk
+    - name: zmk-keyboard-piantor
+      remote: dani0854
       revision: main
   self:
     path: config
