@@ -14,8 +14,8 @@ manifest:
     - name: mctechnology17
       url-base: https://github.com/mctechnology17
     # piantor shield for zmk
-    - name: dani0854
-      url-base: https://github.com/dani0854
+    - name: m0rpeth
+      url-base: https://github.com/m0rpeth
   projects:
     - name: zmk
       remote: zmkfirmware
@@ -46,7 +46,7 @@ manifest:
       revision: main
     # piantor shield for zmk
     - name: zmk-keyboard-piantor
-      remote: dani0854
+      remote: m0rpeth
       revision: main
   self:
     path: config
