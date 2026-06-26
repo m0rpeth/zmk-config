@@ -161,7 +161,7 @@
 
         Backslash {
             bindings = <&kp BACKSLASH>;
-            key-positions = <34 33>;
+            key-positions = <30 31>;
             layers = <0>;
         };
 
@@ -179,7 +179,7 @@
 
         Tilde {
             bindings = <&kp TILDE>;
-            key-positions = <31 30>;
+            key-positions = <33 32>;
             layers = <0>;
         };
 
@@ -271,10 +271,10 @@
         qwerty {
             display-name = "qwerty";
             bindings = <
-&kp ESCAPE  &kp Q          &kp W              &kp E           &kp R               &kp T                        &kp Y             &kp U               &kp I           &kp O               &kp P                  &mod_bspc
-&kp TAB     &hrm_l LGUI A  &hrm_l LEFT_ALT S  &hrm_l LCTRL D  &kp F               &kp G                        &kp H             &kp J               &hrm_r RCTRL K  &hrm_r RIGHT_ALT L  &hrm_r RGUI SEMICOLON  &kp SQT
-&none       &kp Z          &kp X              &kp C           &kp V               &kp B                        &kp N             &kp M               &kp COMMA       &kp DOT             &kp FSLH               &none
-                                              &kp BSPC      &mt_space LEFT_SHIFT SPACE  &td_lower_wm_layer           &td_raise_fn_layer  &mt_space RIGHT_SHIFT SPACE &kp ENTER
+&kp ESCAPE  &kp Q          &kp W              &kp E           &kp R                       &kp T                 &kp Y               &kp U                        &kp I           &kp O               &kp P                  &mod_bspc
+&kp TAB     &hrm_l LGUI A  &hrm_l LEFT_ALT S  &hrm_l LCTRL D  &kp F                       &kp G                 &kp H               &kp J                        &hrm_r RCTRL K  &hrm_r RIGHT_ALT L  &hrm_r RGUI SEMICOLON  &kp SQT
+&none       &kp Z          &kp X              &kp C           &kp V                       &kp B                 &kp N               &kp M                        &kp COMMA       &kp DOT             &kp FSLH               &none
+                                              &kp BSPC        &mt_space LEFT_SHIFT SPACE  &td_lower_wm_layer    &td_raise_fn_layer  &mt_space RIGHT_SHIFT SPACE  &kp ENTER
             >;
         };
 
