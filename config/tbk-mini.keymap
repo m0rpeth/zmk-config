@@ -59,7 +59,7 @@
             label = "TD_LOWER_WM_LAYER";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&mo 2>, <&mo 5>;
+            bindings = <&mo 2>, <&mo 4>;
         };
 
         td_raise_fn_layer: td_raise_fn_layer {
@@ -67,7 +67,7 @@
             label = "TD_RAISE_FN_LAYER";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&mo 1>, <&mo 4>;
+            bindings = <&mo 1>, <&mo 5>;
         };
     };
 
@@ -271,10 +271,10 @@
         qwerty {
             display-name = "qwerty";
             bindings = <
-&kp TAB  &kp Q          &kp W              &kp E           &kp R                       &kp T                 &kp Y               &kp U                        &kp I           &kp O               &kp P                  &kp SQT
-&kp ESC  &hrm_l LGUI A  &hrm_l LEFT_ALT S  &hrm_l LCTRL D  &kp F                       &kp G                 &kp H               &kp J                        &hrm_r RCTRL K  &hrm_r RIGHT_ALT L  &hrm_r RGUI SEMICOLON  &kp ENTER
-&none    &kp Z          &kp X              &kp C           &kp V                       &kp B                 &kp N               &kp M                        &kp COMMA       &kp DOT             &kp FSLH               &none
-                                           &none           &mt_space LEFT_SHIFT SPACE  &td_lower_wm_layer    &td_raise_fn_layer  &mt_space RIGHT_SHIFT SPACE  &mod_bspc
+&kp TAB  &kp Q          &kp W              &kp E           &kp R                       &kp T    &kp Y  &kp U                        &kp I           &kp O               &kp P                  &kp SQT
+&kp ESC  &hrm_l LGUI A  &hrm_l LEFT_ALT S  &hrm_l LCTRL D  &kp F                       &kp G    &kp H  &kp J                        &hrm_r RCTRL K  &hrm_r RIGHT_ALT L  &hrm_r RGUI SEMICOLON  &kp ENTER
+&mo 5    &kp Z          &kp X              &kp C           &kp V                       &kp B    &kp N  &kp M                        &kp COMMA       &kp DOT             &kp FSLH               &none
+                                           &mo 4           &mt_space LEFT_SHIFT SPACE  &mo 2    &mo 1  &mt_space RIGHT_SHIFT SPACE  &mod_bspc
             >;
         };
 
@@ -308,16 +308,6 @@
             >;
         };
 
-        fn_layer {
-            display-name = "fn";
-            bindings = <
-&none  &none  &kp F7  &kp F8  &kp F9  &kp F12    &none  &none  &none  &none  &none  &none
-&none  &none  &kp F4  &kp F5  &kp F6  &kp F11    &none  &none  &none  &none  &none  &none
-&none  &none  &kp F1  &kp F2  &kp F3  &kp F10    &none  &none  &none  &none  &none  &none
-                      &none   &none   &none      &none  &none  &none
-            >;
-        };
-
         wm_layer {
             display-name = "wm";
             bindings = <
@@ -325,6 +315,16 @@
 &none  &none  &none  &none  &none  &none    &kp LC(LEFT_ARROW)  &kp LC(DOWN_ARROW)  &kp LC(UP_ARROW)  &kp LC(RIGHT_ARROW)  &none  &none
 &none  &none  &none  &none  &none  &none    &none               &none               &none             &none                &none  &none
                      &none  &none  &none    &none               &none               &none
+            >;
+        };
+
+        fn_layer {
+            display-name = "fn";
+            bindings = <
+&none  &none  &kp F7  &kp F8  &kp F9  &kp F12    &none  &none  &none  &none  &none  &none
+&none  &none  &kp F4  &kp F5  &kp F6  &kp F11    &none  &none  &none  &none  &none  &none
+&none  &none  &kp F1  &kp F2  &kp F3  &kp F10    &none  &none  &none  &none  &none  &none
+                      &none   &none   &none      &none  &none  &none
             >;
         };
     };
