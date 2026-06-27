@@ -281,10 +281,10 @@
         colemak {
             display-name = " colemak";
             bindings = <
-&kp TAB  &kp Q          &kp W              &kp F           &kp P           &kp G    &kp J  &kp L      &kp U           &kp Y               &kp SEMI       &mod_bspc
-&kp ESC  &hrm_l LGUI A  &hrm_l LEFT_ALT R  &hrm_l LCTRL S  &kp T           &kp D    &kp H  &kp N      &hrm_r RCTRL E  &hrm_r RIGHT_ALT I  &hrm_r RGUI O  &kp SQT
-&mo 6    &kp Z          &kp X              &kp C           &kp V           &kp B    &kp K  &kp M      &kp COMMA       &kp DOT             &kp FSLH       &none
-                                           &mo 3           &kp LEFT_SHIFT  &mo 2    &mo 5  &kp SPACE  &kp ENTER
+&trans  &kp Q          &kp W              &kp F           &kp P   &kp G     &kp J   &kp L   &kp U           &kp Y               &kp SEMI       &trans
+&trans  &hrm_l LGUI A  &hrm_l LEFT_ALT R  &hrm_l LCTRL S  &kp T   &kp D     &kp H   &kp N   &hrm_r RCTRL E  &hrm_r RIGHT_ALT I  &hrm_r RGUI O  &trans
+&trans  &kp Z          &kp X              &kp C           &kp V   &kp B     &kp K   &kp M   &kp COMMA       &kp DOT             &kp FSLH       &trans
+                                          &trans          &trans  &trans    &trans  &trans  &trans
             >;
         };
 
