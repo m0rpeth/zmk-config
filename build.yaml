@@ -18,6 +18,8 @@
 #
 ---
 include:
+  ### Active ###
+
   ### Piantor ###
   - board: rpi_pico
     shield: piantor_left
@@ -30,12 +32,27 @@ include:
   - board: nice_nano_v2
     shield: tbk-mini_right
 
-  ### Planck Rev6 ###
-  - board: planck_rev6
+  ### Scylla ###
+  - board: nice_nano_v2
+    shield: scylla_left
+  - board: nice_nano_v2
+    shield: scylla_right
 
-  ### CORNE START ###
-  ### nice_view START ###
-  # nice_nano_v2 + nice_view_gem
+  ### Disabled ###
+
+  # Planck Rev6
+  # - board: planck_rev6
+
+  # Corne + nice_oled
+  # - board: nice_nano_v2
+  #   shield: corne_left nice_oled
+  #   cmake-args: -DCONFIG_ZMK_KEYBOARD_NAME=\"Nice_Corne_Oled\"
+  #   artifact-name: nice_corne_left_oled
+  # - board: nice_nano_v2
+  #   shield: corne_right nice_oled
+  #   artifact-name: nice_corne_right_oled
+
+  # Corne + nice_view_gem
   # - board: nice_nano_v2
   #   shield: corne_left nice_view_adapter nice_view_gem
   #   cmake-args: -DCONFIG_ZMK_KEYBOARD_NAME=\"Nice_Corne_View\"
@@ -44,39 +61,26 @@ include:
   #   shield: corne_right nice_view_adapter nice_view_gem
   #   cmake-args: -DCONFIG_NICE_VIEW_GEM_ANIMATION=y
   #   artifact-name: nice_corne_right_view
-  # peripheral_left + nice_nano_v2 + nice_view_gem
+
+  # Corne (peripheral_left) + nice_view_gem
   # - board: nice_nano_v2
   #   shield: corne_left_peripheral nice_view_adapter nice_view_gem
   #   cmake-args: -DCONFIG_NICE_VIEW_GEM_ANIMATION=y
   #   artifact-name: nice_corne_left_peripheral_view
-  ### nice_view END ###
 
-  ### nice_oled START ###
-  # nice_nano_v2 + nice_oled
-  - board: nice_nano_v2
-    shield: corne_left nice_oled
-    cmake-args: -DCONFIG_ZMK_KEYBOARD_NAME=\"Nice_Corne_Oled\"
-    artifact-name: nice_corne_left_oled
-  - board: nice_nano_v2
-    shield: corne_right nice_oled
-    artifact-name: nice_corne_right_oled
-    # peripheral_left + nice_nano_v2 + nice_oled
+  # Corne (peripheral_left) + nice_oled
   # - board: nice_nano_v2
   #   shield: corne_left_peripheral nice_oled
   #   artifact-name: nice_corne_left_peripheral_oled
-  ### nice_oled END ###
 
-  ### ProMicro_Dongle START ###
-  # nice_nano_v2 dongle
+  # ProMicro Dongle (nice_nano_v2)
   # - board: nice_nano_v2
   #   shield: corne_dongle_pro_micro
   #   cmake-args: -DCONFIG_ZMK_KEYBOARD_NAME=\"Nice_Dongle\"
   #   artifact-name: nice_corne_dongle_pro_micro
-  # snippet: zmk-usb-logging
+  #   snippet: zmk-usb-logging
   # - board: nice_nano_v2
   #   shield: corne_dongle_pro_micro dongle_display
   #   cmake-args: -DCONFIG_ZMK_KEYBOARD_NAME=\"Nice_Dongle_O\"
   #   artifact-name: nice_corne_dongle_oled
-  # snippet: zmk-usb-logging
-  ### Pro Micro END ###
-  ### CORNE END ###
+  #   snippet: zmk-usb-logging

@@ -1,0 +1,26 @@
+#include <behaviors.dtsi>
+#include <dt-bindings/zmk/keys.h>
+
+/ {
+	keymap {
+		compatible = "zmk,keymap";
+
+		default_layer {
+// -----------------------------------------------------------------------------------------------------------------
+// |  ESC  |  Q  |  W  |  E   |  R   |  T  |                    |  Y  |  U   |  I   |  O   |  P   |  BSPC |
+// |  TAB  |  A  |  S  |  D   |  F   |  G  |                    |  H  |  J   |  K   |  L   |  ;   |  QUOT |
+// |  LSFT |  Z  |  X  |  C   |  V   |  B  |                    |  N  |  M   |  ,   |  .   |  /   |  RSFT |
+// |  CTRL |     |     |      |      |     |                    |     |      |      |      |      |       |
+//                 | LCTRL | SPACE | 	 |       | SPACE | ENTER |
+//                          | none | none |       | none | none |
+			bindings = <
+&kp ESC     &kp Q     &kp W    &kp E     &kp R     &kp T                     &kp Y     &kp U    &kp I     &kp O     &kp P    &kp BSPC
+&kp TAB     &kp A     &kp S    &kp D     &kp F     &kp G                     &kp H     &kp J    &kp K     &kp L     &kp SEMI &kp SQT
+&kp LSHFT   &kp Z     &kp X    &kp C     &kp V     &kp B                     &kp N     &kp M    &kp COMMA &kp DOT   &kp SLASH &kp RSHFT
+&kp LCTRL   &none     &none    &none     &none     &none                     &none     &none    &none     &none     &none     &none
+                    &kp LCTRL &kp SPACE &kp SPACE &none     &kp SPACE &kp ENTER
+                    &none     &none     &none      &none
+			>;
+		};
+	};
+};
