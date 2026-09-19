@@ -16,3 +16,28 @@
 		, <&pro_micro 7 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
 		;
 };
+
+&pinctrl {
+    scylla_r_uart_default: scylla_r_uart_default {
+        group1 {
+            psels = <NRF_PSEL(UART_RX, 0, 6)>;
+            bias-pull-up;
+        };
+        group2 {
+            psels = <NRF_PSEL(UART_TX, 0, 8)>;
+        };
+    };
+
+    scylla_r_uart_sleep: scylla_r_uart_sleep {
+        group1 {
+            psels = <NRF_PSEL(UART_RX, 0, 6)>, <NRF_PSEL(UART_TX, 0, 8)>;
+            low-power-enable;
+        };
+    };
+};
+
+&uart0 {
+    pinctrl-0      = <&scylla_r_uart_default>;
+    pinctrl-1      = <&scylla_r_uart_sleep>;
+    pinctrl-names  = "default", "sleep";
+};
