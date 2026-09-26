@@ -35,7 +35,6 @@ include:
   ### Scylla ###
   - board: nice_nano_v2
     shield: scylla_left
-    snippet: zmk-usb-logging
   - board: nice_nano_v2
     shield: scylla_right
 
