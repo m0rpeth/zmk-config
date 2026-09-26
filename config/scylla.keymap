@@ -76,139 +76,139 @@
 
         Left_Square_Bracket {
             bindings = <&kp LBKT>;
-            key-positions = <2 3>;
+            key-positions = <14 15>;
             layers = <0>;
         };
 
         Right_Square_Bracket {
             bindings = <&kp RBKT>;
-            key-positions = <3 4>;
+            key-positions = <15 16>;
             layers = <0>;
         };
 
         Left_Parenthesis {
             bindings = <&kp LPAR>;
-            key-positions = <14 15>;
+            key-positions = <26 27>;
             layers = <0>;
         };
 
         Right_Parenthesis {
             bindings = <&kp RPAR>;
-            key-positions = <15 16>;
+            key-positions = <27 28>;
             layers = <0>;
         };
 
         Left_Brace {
             bindings = <&kp LBRC>;
-            key-positions = <26 27>;
+            key-positions = <38 39>;
             layers = <0>;
         };
 
         Right_Brace {
             bindings = <&kp RBRC>;
-            key-positions = <27 28>;
+            key-positions = <39 40>;
             layers = <0>;
         };
 
         Percent {
             bindings = <&kp PERCENT>;
-            key-positions = <8 9>;
+            key-positions = <20 21>;
             layers = <0>;
         };
 
         QuestionMark {
             bindings = <&kp QMARK>;
-            key-positions = <13 14>;
+            key-positions = <25 26>;
             layers = <0>;
         };
 
         ExclamationMark {
             bindings = <&kp EXCL>;
-            key-positions = <25 26>;
+            key-positions = <37 38>;
             layers = <0>;
         };
 
         Underscore {
             bindings = <&kp UNDER>;
-            key-positions = <28 29>;
+            key-positions = <40 41>;
             layers = <0>;
         };
 
         Amp {
             bindings = <&kp AMPS>;
-            key-positions = <1 2>;
+            key-positions = <13 14>;
             layers = <0>;
         };
 
         Grave {
             bindings = <&kp GRAVE>;
-            key-positions = <4 5>;
+            key-positions = <16 17>;
             layers = <0>;
         };
 
         Pipe {
             bindings = <&kp PIPE>;
-            key-positions = <16 17>;
+            key-positions = <28 29>;
             layers = <0>;
         };
 
         At {
             bindings = <&kp AT>;
-            key-positions = <18 19>;
+            key-positions = <30 31>;
             layers = <0>;
         };
 
         Backslash {
             bindings = <&kp BACKSLASH>;
-            key-positions = <30 31>;
+            key-positions = <42 43>;
             layers = <0>;
         };
 
         Caret {
             bindings = <&kp CARET>;
-            key-positions = <31 32>;
+            key-positions = <43 44>;
             layers = <0>;
         };
 
         Minus {
             bindings = <&kp MINUS>;
-            key-positions = <19 20>;
+            key-positions = <31 32>;
             layers = <0>;
         };
 
         Tilde {
             bindings = <&kp TILDE>;
-            key-positions = <33 32>;
+            key-positions = <45 44>;
             layers = <0>;
         };
 
         Dollar {
             bindings = <&kp DOLLAR>;
-            key-positions = <7 8>;
+            key-positions = <19 20>;
             layers = <0>;
         };
 
         Equal {
             bindings = <&kp EQUAL>;
-            key-positions = <20 21>;
+            key-positions = <32 33>;
             layers = <0>;
         };
 
         plus {
             bindings = <&kp PLUS>;
-            key-positions = <21 22>;
+            key-positions = <33 34>;
             layers = <0>;
         };
 
         Asterisk {
             bindings = <&kp ASTERISK>;
-            key-positions = <9 10>;
+            key-positions = <21 22>;
             layers = <0>;
         };
 
         Hash {
             bindings = <&kp HASH>;
-            key-positions = <7 6>;
+            key-positions = <19 18>;
             layers = <0>;
         };
     };
